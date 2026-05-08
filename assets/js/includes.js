@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function() {
           <li><a href="index.html#about" data-key="about"><i class="bi bi-person navicon"></i> About</a></li>
           <li><a href="index.html#resume" data-key="resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
           <li><a href="index.html#portfolio" data-key="portfolio"><i class="bi bi-images navicon"></i> My Apps</a></li>
-          <li><a href="index.html#services" data-key="services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
           <li><a href="index.html#contact" data-key="contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
         </ul></nav>
       </header>`;
