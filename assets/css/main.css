@@ -207,8 +207,13 @@ h6 {
 
 @media (min-width: 1200px) {
 
+  /* Support both direct header sibling and header injected inside #site-header */
   .header~main,
-  .header~#footer {
+  .header~#footer,
+  #site-header + main,
+  #site-header ~ main,
+  #site-header + #footer,
+  #site-header ~ #footer {
     margin-left: 300px;
   }
 }
@@ -616,6 +621,29 @@ section,
   .hero p {
     font-size: 20px;
   }
+}
+
+/* Compact hero variant for index page */
+.hero-compact {
+  min-height: 28vh;
+  padding: 40px 0;
+}
+.hero-compact > img { display: none; }
+.hero-compact .hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.hero-profile {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+@media (max-width: 768px) {
+  .hero-compact { padding: 28px 0; }
 }
 
 /*--------------------------------------------------------------

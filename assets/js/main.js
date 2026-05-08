@@ -11,22 +11,42 @@
 
   /**
    * Header toggle
+   * Supports headers injected after scripts run (client-side includes).
    */
-  const headerToggleBtn = document.querySelector('.header-toggle');
-
-  function headerToggle() {
-    document.querySelector('#header').classList.toggle('header-show');
-    headerToggleBtn.classList.toggle('bi-list');
-    headerToggleBtn.classList.toggle('bi-x');
+  var headerToggle = null;
+  function initHeaderToggle(btn) {
+    if (!btn) return;
+    headerToggle = function() {
+      var hdr = document.querySelector('#header');
+      if (hdr) hdr.classList.toggle('header-show');
+      btn.classList.toggle('bi-list');
+      btn.classList.toggle('bi-x');
+    };
+    btn.addEventListener('click', headerToggle);
   }
-  headerToggleBtn.addEventListener('click', headerToggle);
+
+  // Try to initialize immediately if the toggle exists
+  var initialToggleBtn = document.querySelector('.header-toggle');
+  if (initialToggleBtn) {
+    initHeaderToggle(initialToggleBtn);
+  } else {
+    // Watch for the header-toggle being added later (e.g. when header is injected)
+    var observer = new MutationObserver(function(mutations, obs) {
+      var btn = document.querySelector('.header-toggle');
+      if (btn) {
+        initHeaderToggle(btn);
+        obs.disconnect();
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
 
   /**
    * Hide mobile nav on same-page/hash links
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
-      if (document.querySelector('.header-show')) {
+      if (document.querySelector('.header-show') && typeof headerToggle === 'function') {
         headerToggle();
       }
     });

@@ -7,6 +7,7 @@
   <title>Lijo Jolly Daniel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="nav-active" content="home">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -31,49 +32,18 @@
 
 <body class="index-page">
 
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <!-- Uncomment the line below if you also wish to use an image logo -->
-      <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Lijo Jolly Daniel</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> My Apps</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
-  </header>
+  <div id="site-header"></div>
 
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background hero-compact">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Lijo Jolly Daniel</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Tech Enthusiast">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <div class="container hero-inner text-center" data-aos="fade-up" data-aos-delay="100">
+        <div>
+          <h2>Lijo Jolly Daniel</h2>
+          <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Tech Enthusiast">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        </div>
       </div>
 
     </section><!-- /Hero Section -->
@@ -90,11 +60,8 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Solution Architect &amp; Senior .NET/AI Engineer.</h2>
+            <div class="col-lg-10 content mx-auto">
+            <h2>Solution Architect &amp; AI Engineer.</h2>
             <p class="fst-italic py-3">
               Solution Architect and senior .NET engineering leader with 20 years delivering scalable platforms for government and enterprise clients.<br>
               Expert in C#, .NET (ASP.NET Core, Web API, EF Core), integration architecture, and GIS solutions.<br>
@@ -502,6 +469,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/includes.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
