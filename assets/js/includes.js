@@ -58,11 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <a href="index.html" class="logo d-flex align-items-center justify-content-center"><h1 class="sitename">Lijo Jolly Daniel</h1></a>
         <div class="social-links text-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.facebook.com/lijojd/" class="facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/lijolala/" class="instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lijo-jolly-daniel/" class="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
         </div>
         <nav id="navmenu" class="navmenu"><ul>
           <li><a href="index.html#hero" data-key="home"><i class="bi bi-house navicon"></i>Home</a></li>
