@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Home Lab — Docker Containers</title>
+  <meta name="description" content="Personal homelab running Jellyfin, Immich, Homarr, FileBrowser and OpenAI services on Ubuntu via Docker and Portainer.">
+  <meta name="keywords" content="homelab, docker, portainer, jellyfin, immich, homarr, filebrowser, openai, ubuntu">
+  <meta name="nav-active" content="portfolio">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <div id="site-header"></div>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Home Lab — Docker Containers</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Home Lab</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section id="portfolio-details" class="portfolio-details section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Project summary row -->
+        <div class="row gy-4 mb-5">
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>Home Lab — Docker Containers on Ubuntu</h2>
+              <p>A personal homelab running on an Ubuntu machine, using Docker containers managed through <strong>Portainer</strong>. The stack covers media streaming, photo management, a services dashboard, file access, and local AI/LLM experimentation.</p>
+              <ul>
+                <li><strong>Jellyfin</strong> — Self-hosted media server for movies, TV, and music.</li>
+                <li><strong>Immich</strong> — Self-hosted photo and video backup (Google Photos alternative).</li>
+                <li><strong>Homarr</strong> — Customisable home dashboard to launch all services at a glance.</li>
+                <li><strong>FileBrowser</strong> — Lightweight web-based file manager over the Docker volumes.</li>
+                <li><strong>OpenAI / Open WebUI</strong> — Local LLM interface (Ollama + Open WebUI) for AI experimentation.</li>
+              </ul>
+              <p>All stacks are defined as Docker Compose files and deployed / maintained through the Portainer UI, with no vendor lock-in and full data ownership.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Personal / Home Lab</li>
+                <li><strong>Platform</strong>: Ubuntu (Docker)</li>
+                <li><strong>Orchestration</strong>: Portainer</li>
+                <li><strong>Services</strong>: Jellyfin · Immich · Homarr · FileBrowser · OpenAI</li>
+                <li><strong>Status</strong>: Ongoing</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- App screens in desktop monitor mockups -->
+        <h3 class="text-center mb-4" data-aos="fade-up">App Screens</h3>
+        <div class="row gy-5">
+
+          <!-- Portainer -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-portainer.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/app-2.jpg';"
+                       alt="Portainer Dashboard">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">Portainer — Container Management</div>
+            </div>
+          </div>
+
+          <!-- Jellyfin -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-jellyfin.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/app-3.jpg';"
+                       alt="Jellyfin Media Server">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">Jellyfin — Media Streaming</div>
+            </div>
+          </div>
+
+          <!-- Immich -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-immich.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/product-1.jpg';"
+                       alt="Immich Photo Backup">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">Immich — Photo &amp; Video Backup</div>
+            </div>
+          </div>
+
+          <!-- Homarr -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-homarr.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/product-2.jpg';"
+                       alt="Homarr Dashboard">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">Homarr — Services Dashboard</div>
+            </div>
+          </div>
+
+          <!-- FileBrowser -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-filebrowser.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/product-3.jpg';"
+                       alt="FileBrowser">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">FileBrowser — Web File Manager</div>
+            </div>
+          </div>
+
+          <!-- OpenAI / Open WebUI -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="app-monitor-wrap">
+              <div class="app-monitor">
+                <div class="monitor-dots">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <div class="screen-area">
+                  <img src="assets/img/portfolio/hl-openwebui.jpg"
+                       onerror="this.onerror=null;this.src='assets/img/portfolio/books-1.jpg';"
+                       alt="Open WebUI / OpenAI">
+                </div>
+              </div>
+              <div class="app-monitor-base"></div>
+              <div class="app-monitor-stand-wrap"><div class="app-monitor-stand"></div></div>
+              <div class="app-monitor-label">Open WebUI — Local LLM / OpenAI Interface</div>
+            </div>
+          </div>
+
+        </div><!-- end row -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Lijo's Web</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/includes.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
